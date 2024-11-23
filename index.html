@@ -1,57 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>codHAR - Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #36383a, #ced1d6);
-      color: white;
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-    h1 {
-      font-size: 4rem;
-   
-      font-weight: bold;
-      animation: glow 1.5s infinite alternate;
-    }
-    h2 {
-      font-size: 1.5rem;
-      font-style: italic;
-      margin: 10px 0;
-      opacity: 0.8;
-    }
-    p {
-      margin: 20px 0;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit's Portfolio</title>
+    <style>
+        /* Reset and global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 5px #14181b, 0 0 10px #14181b, 0 0 20px #14181b;
-      }
-      to {
-        text-shadow: 0 0 20px #14181b, 0 0 30px #14181b, 0 0 40px #14181b;
-      }
-    }
-  </style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Utility classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-primary {
+            color: #2563eb;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .bg-light {
+            background-color: #f8fafc;
+        }
+
+        .rounded {
+            border-radius: 0.5rem;
+        }
+
+        .shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background-color: #2563eb;
+            border: none;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Header section */
+        header {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: #fff;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* About section */
+        .about {
+            padding: 2rem 0;
+        }
+
+        .about img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills section */
+        .skills {
+            padding: 2rem 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            border-radius: 0.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #f1f5f9;
+        }
+
+    </style>
 </head>
 <body>
-  <h1>codHAR</h1>
-  <h2>Crafting the Future, One Code at a Time.</h2>
-  <p>Our website is coming soon! Stay tuned for something extraordinary.</p>
-  
+    <header class="text-center">
+        <h1>Hi, I'm Harshit</h1>
+        <p class="text-xl">A B.Tech student at VIT Vellore with a passion for web development and software skills.</p>
+    </header>
+
+    <section class="about text-center bg-light">
+        <div class="container">
+            <img src="https://via.placeholder.com/200" alt="Harshit's Photo" class="shadow">
+            <h2>About Me</h2>
+            <p>I'm 17, currently pursuing B.Tech in Information Technology. I am passionate about creating innovative web solutions and aspire to start my own tech company, codHAR. My focus is on building websites and providing learning resources for coding enthusiasts.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container text-center">
+            <h2 class="text-primary">My Skills</h2>
+            <p>Here are some of the skills I've developed so far:</p>
+            <div class="skills-grid">
+                <div class="skill-card shadow">
+                    <h3>HTML & CSS</h3>
+                    <p>Building responsive and visually appealing websites.</p>
+                </div>
+                <div class="skill-card shadow">
+                    <h3>Python</h3>
+                    <p>Strong understanding and experience in Python programming.</p>
+                </div>
+                <div class="skill-card shadow">
+                    <h3>Web Development</h3>
+                    <p>Crafting modern web applications with a focus on user experience.</p>
+                </div>
+                <div class="skill-card shadow">
+                    <h3>GitHub</h3>
+                    <p>Proficient in hosting and managing repositories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Harshit | Crafted with passion and dedication.</p>
+    </footer>
 </body>
 </html>
