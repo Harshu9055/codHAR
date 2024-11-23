@@ -1,140 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    
-   
-    
-    
-}
+</head>
+<body>
+   <img src="https://tailwindui.com/plus/img/beams-home@95.jpg" alt="Harshit's Photo" class="shadow">
+    <header class="text-center">
+        <h1>Hi, I'm Harshit</h1>
+        <p class="text-xl">B.Tech student at VIT Vellore with a passion for web development and software skills.</p>
+    </header>
 
-body img{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-    
-    
-}
+    <section class="about text-center bg-light">
+        <div class="container">
+            
+            <h2>About Me</h2>
+            <p>I'm 17, currently pursuing B.Tech in Information Technology. I am passionate about creating innovative web solutions. My focus is on building websites.</p>
+        </div>
+    </section>
 
-/* Utility classes */
-.container {
-    max-width: 100%;
-    margin: 0 ;
-    padding: 1rem;
-}
+    <section class="skills">
+        <div class="container text-center">
+            <h2 class="text-primary">My Skills</h2>
+            <p>Here are some of the skills I've developed so far:</p>
+            <div class="skills-grid">
+                <div class="skill-card shadow">
+                    <h3>HTML & CSS</h3>
+                    <p>Building responsive and visually appealing websites.</p>
+                </div>
+                <div class="skill-card shadow">
+                    <h3>Python</h3>
+                    <p>Strong understanding and experience in Python programming.</p>
+                </div>
+                <div class="skill-card shadow">
+                    <h3>Web Development</h3>
+                    <p>Crafting modern web applications with a focus on user experience.</p>
+                </div>
+                <div class="skill-card shadow">
+                    <h3>GitHub</h3>
+                    <p>Proficient in hosting and managing repositories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.text-center {
-    text-align: center;
-}
-
-.text-primary {
-    color: #2563eb;
-}
-
-.text-xl {
-    font-size: 1.25rem;
-}
-
-
-
-.rounded {
-    border-radius: 0.5rem;
-}
-
-.shadow {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background-color: #2563eb;
-    border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #1d4ed8;
-}
-
-/* Header section */
-header {
-    
-    color: black;
-    padding: 2rem 0;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-/* About section */
-.about {
-    padding: 2rem 0;
-}
-
-.about img {
-    max-width: 200px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-/* Skills section */
-.skills {
-    padding: 2rem 0;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.skill-card {
-    background: #fff;
-    
-    padding: 1rem;
-    border: 1px solid #e5e7eb;
-    text-align: center;
-    border-radius: 0.5rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-#creds {
-    text-align: center;
-    padding: 1rem 0;
-    background: #f1f5f9;
-    border-radius: 25px;
-    width: 50vw;
-    
-    
-    
-    
-}
-
-#footer {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+    <div id = footer>
+      <div id = creds>
+        <p>&copy; 2024 Harshit | Crafted with passion and dedication.</p>
+      </div>
+    </div>
+</body>
+</html>
