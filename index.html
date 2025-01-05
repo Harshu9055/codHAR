@@ -1,56 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshit's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-</head>
+    </head>
 <body>
-   <img src="https://tailwindui.com/plus/img/beams-home@95.jpg" alt="Harshit's Photo" class="shadow">
-    <header class="text-center">
-        <h1>Hi, I'm Harshit</h1>
-        <p class="text-xl">B.Tech student at VIT Vellore with a passion for web development and software skills.</p>
-    </header>
+    <nav id="navbar">
+        <logo>
+           codHAR
+        </logo>
+        
+        <links>
+            <a href="">Home</a>
+            <a href=".about-right">About</a>
+            <a href=".about-right">Skills</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+        </links>
+    </nav>
 
-    <section class="about text-center bg-light">
-        <div class="container">
+    <div class="nav2">
+    </div>
+
+    <main>
+        <div id="sec1">
+            <div class="img-container"><img src="images/damm.webp" alt=""></div>
             
-            <h2>About Me</h2>
-            <p>I'm 17, currently pursuing B.Tech in Information Technology. I am passionate about creating innovative web solutions. My focus is on building websites.</p>
         </div>
+        <div id="sec2">
+            <p 
+                style="
+                font-size: 3.9rem;
+                font-weight: bolder;
+                font-family: 'Poppins', sans-serif;
+                ">I'm Harshit
+            </p>
+
+            <p
+             style=
+            '
+            font-size: larger;
+            color: #717171;
+            '>
+               <span id="element"></span>
+            </p>
+
+            
+
+            <button>CONTACT ME</button>
+
+            <div class="socials">
+                <a href="www.codhar.tech"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="aboutme">
+
+        <div class="about-left">
+            <img src="images/bg.svg">
+        </div> 
+
+       <div class="about-right">
+            <h1 style="text-align: center;">About Me</h1>
+            <p>I'm a 17-year-old B.Tech student at VIT Vellore with a passion for web development. I excel at crafting functional, visually appealing websites while meeting important timelines with precision.Driven by a love for learning and innovation, I'm always exploring new technologies to enhance my skills and tackle exciting challenges.Let's connect and build something impactful together!</p>
+       </div>
+
     </section>
 
     <section class="skills">
-        <div class="container text-center">
-            <h2 class="text-primary">My Skills</h2>
-            <p>Here are some of the skills I've developed so far:</p>
-            <div class="skills-grid">
-                <div class="skill-card shadow">
-                    <h3>HTML & CSS</h3>
-                    <p>Building responsive and visually appealing websites.</p>
-                </div>
-                <div class="skill-card shadow">
-                    <h3>Python</h3>
-                    <p>Strong understanding and experience in Python programming.</p>
-                </div>
-                <div class="skill-card shadow">
-                    <h3>Web Development</h3>
-                    <p>Crafting modern web applications with a focus on user experience.</p>
-                </div>
-                <div class="skill-card shadow">
-                    <h3>GitHub</h3>
-                    <p>Proficient in hosting and managing repositories.</p>
-                </div>
+        <p>Tools I Use</p>
+        <div class="skills-flexbox">
+            <div class="skill">
+                <img src="images/js.png" alt="">
+                <p>Javascript</p>
+            </div>
+            <div class="skill">
+                <img src="images/py.png" alt="">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="images/c.png" alt="">
+                <p>C</p>
+            </div>
+            <div class="skill">
+                <img src="images/tw.png" alt="">
+                <p>Tailwind</p>
+            </div>
+            <div class="skill">
+                <img src="images/rt.png" alt="">
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <img src="images/nt.png" alt="">
+                <p>Next js</p>
             </div>
         </div>
+        
     </section>
+       
+   
 
-    <div id = footer>
-      <div id = creds>
-        <p>&copy; 2024 Harshit | Crafted with passion and dedication.</p>
-      </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+    <script>
+      var typed = new Typed('#element', {
+        strings: ["IT student at VITV and a Web-Devloper"],
+        typeSpeed: 28,
+      });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
