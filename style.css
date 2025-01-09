@@ -3,7 +3,7 @@ margin:0;
 padding:0;
 box-sizing: border-box;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-color:rgb(94, 93, 93);
+color:white;
 scrollbar-width:none;
 scroll-behavior: smooth;
 
@@ -11,6 +11,8 @@ scroll-behavior: smooth;
 html,body{
 height: 100%;
 width: 100%;
+background-color: rgb(0, 0, 0);
+
 
 
 }
@@ -22,24 +24,29 @@ nav{
     display: flex;
     justify-content: space-around;
     height:10vh;
-    position:fixed;
     width: 100%;
-    margin-bottom: 100px;
-    background-color:#e2d1f8;
     z-index: 10;
-    
-    
+  
 }
 
 
 logo{
     font-family: 'Orbitron', sans-serif;
-    color:rgb(68, 65, 71);
     font-size: 3rem;
     font-weight: 600;
     width: 50%;
     display: flex;
-  align-items: center;
+    align-items: center;
+}
+
+logo span{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color:#6d3cd0;
 }
 
 links{
@@ -58,31 +65,25 @@ links a{
     text-decoration: none;
     font-size: larger;
     transition: text-decoration-thickness 1s ease,text-underline-offset 1s ease;
-    color: black;
+ 
 }
 
 links a:hover{
+    
     text-decoration: underline;
-    text-decoration-color: #a563c1;
+    text-decoration-color: #6d3cd0;
     text-decoration-style: solid;
     text-decoration-thickness: 2px;
-    text-underline-offset: 6px; 
+    text-underline-offset: 8px; 
 
 }
 
-.nav2{
-    height:10vh;
-    width: 100%;
-  
-
-}
 
 main{
     height: 90vh;
     display: flex;
     justify-content:center;
-    background-color:#e2d1f8;
-    color:rgb(94, 93, 93);
+    
     
 }
 
@@ -116,7 +117,7 @@ main{
 }
 
 #sec2 button{
-    background-color:#8A4FFF;
+    background-color:#6d3cd0;
     padding:10px 25px;
     font-size: 1rem;
     border: none;
@@ -128,7 +129,7 @@ main{
 }
 
 #sec2 button:hover{
-    background-color: #6d3cd0;
+    background-color: #581fc9;
    
     
 }
@@ -143,6 +144,7 @@ main{
 }
 
 
+
 .socials a i:hover{
     color:#8A4FFF;
 
@@ -151,28 +153,31 @@ main{
 
 .aboutme{
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
     
 }
     
 .about-left{
     width:40%;
-    padding:75px 40px;
+    padding:40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    padding-top: 0;
 }
 
 
 .about-right{
     width: 40%;
-    padding:75px 30px;
-    padding-top: 0;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 0;
 }
 
 
@@ -180,36 +185,50 @@ main{
 .about-left img{
     width: 90%;
     height: 100%;
-    object-fit: cover;
-}
-
-.about-right h1{
-    color: black;
-    font-size: 2rem;
+  
 }
 
 .about-right p{
-    
-    margin-top: 30px;
+  
     font-size: 1.3rem;
     text-align: center;
 }
 
+.skills-p{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #6d3cd0;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px; 
+   
+}
+
 .skills{
     width: 100%;
-    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+
+}
+
+.skills-img{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .skills p{
     text-align: center;
     margin-top: 40px;
     font-size: 2.5rem;
-    color: black;
-    font-weight: bolder;
-   
 }
 
 .skills-flexbox{
@@ -218,7 +237,7 @@ main{
     width:60%;
     justify-content: center;
     gap:15px;
-    margin-top: 80px;
+    margin-top: 50px;
     
    
 
@@ -227,16 +246,29 @@ main{
 .skill{
     width:240px;
     height: 120px;
-    background-color:#e8e0f4;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border: 3px solid #6d3cd0;
+    background-color:white;
+    
+    
+   
+}
+
+
+.skill:hover{
+    background-color:hsl(272, 100%, 95%);
+    border: 5px solid #6d3cd0;
+    
+    
 }
 
 .skill img{
     width: 30%;
     max-height: 70%;
+    
     
 }
 
@@ -245,4 +277,141 @@ main{
     font-size: 1.7rem;
     margin: 0;
     font-weight: 500;
+    color: rgb(73, 73, 73);
+}
+
+
+.projects{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: #6d3cd0;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px; 
+    padding-top: 10px;
+}
+
+
+
+.projects-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:25px 15px;
+}
+
+
+
+.card-container {
+    perspective: 1000px;
+  }
+.card {
+    width: 660px;
+    height: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+   
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #6d3cd0;
+}
+
+.card-front img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-back {
+    background: #ff6347;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.project-card {
+    background: #000000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card h2 {
+    margin-top: 0;
+    color: #8A4FFF;
+}
+.project-card p {
+    line-height: 1.6;
+    color: #555;
+}
+.project-card ul {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
+}
+.project-card ul li {
+    margin: 5px 0;
+}
+.view-project {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #8A4FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.view-project:hover {
+    background-color: #6d3cd0;
+}
+
+
+.contact{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-card form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-card h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: #6d3cd0;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px; 
+    margin-bottom:40px ;
+
+}
+
+#mod-text{
+    color:#8A4FFF;
+    
 }
