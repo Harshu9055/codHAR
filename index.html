@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Harshit</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     </head>
 <body>
     <nav id="navbar">
         <logo>
-           codHAR
+           cod <span>HAR</span> 
         </logo>
         
         <links>
-            <a href="">Home</a>
-            <a href=".about-right">About</a>
-            <a href=".about-right">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+  
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href='#projects' >Projects</a>
+            <a href="#contact">Contact</a>
         </links>
     </nav>
 
-    <div class="nav2">
-    </div>
 
     <main>
         <div id="sec1">
@@ -58,31 +56,38 @@
             <button>CONTACT ME</button>
 
             <div class="socials">
-                <a href="www.codhar.tech"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="www.codhar.tech"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://x.com/Harshit73020?t=ZQ049sBmkfh-ZBX7z5pbeQ&s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://github.com/Harshu9055"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="www.linkedin.com/in/harshitsingh9900"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://www.instagram.com/maihuharshit?igsh=MTd6NXZkMTAydGRreg=="><i class="fa-brands fa-instagram"></i></a>
             </div>
 
         </div>
     </main>
 
-    <section class="aboutme">
+    <h1 id="about" style="text-align: center;margin-bottom: 20px;padding-top: 100px; text-decoration: underline;
+    text-decoration-color: #6d3cd0;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px; ">About Me</h1>
+
+    <section id="about" class="aboutme">
 
         <div class="about-left">
             <img src="images/bg.svg">
         </div> 
 
        <div class="about-right">
-            <h1 style="text-align: center;">About Me</h1>
+            
             <p>I'm a 17-year-old B.Tech student at VIT Vellore with a passion for web development. I excel at crafting functional, visually appealing websites while meeting important timelines with precision.Driven by a love for learning and innovation, I'm always exploring new technologies to enhance my skills and tackle exciting challenges.Let's connect and build something impactful together!</p>
        </div>
 
     </section>
 
-    <section class="skills">
-        <p>Tools I Use</p>
+    <section id="skills" class="skills">
+        
+        <p class="skills-p">Core Skills</p>
         <div class="skills-flexbox">
             <div class="skill">
                 <img src="images/js.png" alt="">
@@ -108,35 +113,116 @@
                 <img src="images/nt.png" alt="">
                 <p>Next js</p>
             </div>
+            <div class="skill">
+                <img src="images/c2.png" alt="">
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <img src="images/dj.png" alt="">
+                <p>Django</p>
+            </div>
         </div>
-        
+
     </section>
        
-   
+    <p id="projects" class="projects">Projects</p>
+    <section class="projects-section">
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-side card-front">
+                    <img src="images/sew.png" alt="">
+                </div>
+                <div class="card-side card-back project-card">
+                    <h2>Suraj Engineering Works</h2>
+                    <ul>
+                      <li>Advanced analytics with data visualization</li>
+                      <li>Secure login system with encrypted user data</li>
+                    </ul>
+                    <a target="_blank" href="https://harshu9055.github.io/suraj-engineering-works/" class="view-project">🔗 View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-side card-front">
+                    <img src="images/laz.png" alt="">
+                </div>
+                <div class="card-side card-back project-card">
+                    <h2>LazarEV.</h2>
+                    <ul>
+                      <li>Advanced analytics with data visualization</li>
+                      <li>Secure login system with encrypted user data</li>
+                    </ul>
+                    <a href="#" class="view-project">🔗 View Project</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-side card-front">
+                    <img src="images/rav.png" alt="">
+                </div>
+                <div class="card-side card-back project-card">
+                    <h2>RahVora</h2>
+                    <ul>
+                      <li>Advanced analytics with data visualization</li>
+                      <li>Secure login system with encrypted user data</li>
+                    </ul>
+                    <a href="#" class="view-project">🔗 View Project</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-side card-front">
+                    <img src="images/portfolio.png" alt="">
+                </div>
+                <div class="card-side card-back project-card">
+                    <h2>Portfolio</h2>
+                    <ul>
+                      <li>Advanced analytics with data visualization</li>
+                      <li>Secure login system with encrypted user data</li>
+                    </ul>
+                    <a target="_blank" href="https://codhar.tech/" class="view-project">🔗 View Project</a>
+            </div>
+        </div>
+
+
+    </section>
 
 
 
+    <section id="contact" class="contact">
+        <div class="contact-card">
+            <h2>Contact Us</h2>
+            <form action="YOUR_FORMSFREE_ENDPOINT" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
 
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
     <script>
       var typed = new Typed('#element', {
-        strings: ["IT student at VITV and a Web-Devloper"],
+        strings: ["<span id='mod-text'>IT</span> student at <span id='mod-text'>VITV</span> and a <span id='mod-text'>Web-Devloper</span>"],
         typeSpeed: 28,
       });
     </script>
