@@ -53,10 +53,10 @@
 
             
 
-            <button>CONTACT ME</button>
+            <button onclick="location.href='#contact';">CONTACT ME</button>
 
             <div class="socials">
-                <a target="_blank" href="www.codhar.tech"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://codhar.tech/"><i class="fa-brands fa-facebook"></i></a>
                 <a target="_blank" href="https://x.com/Harshit73020?t=ZQ049sBmkfh-ZBX7z5pbeQ&s=09"><i class="fa-brands fa-twitter"></i></a>
                 <a target="_blank" href="https://github.com/Harshu9055"><i class="fa-brands fa-github"></i></a>
                 <a target="_blank" href="www.linkedin.com/in/harshitsingh9900"><i class="fa-brands fa-linkedin"></i></a>
@@ -127,22 +127,6 @@
        
     <p id="projects" class="projects">Projects</p>
     <section class="projects-section">
-        
-        <div class="card-container">
-            <div class="card">
-                <div class="card-side card-front">
-                    <img src="images/sew.png" alt="">
-                </div>
-                <div class="card-side card-back project-card">
-                    <h2>Suraj Engineering Works</h2>
-                    <ul>
-                      <li>Advanced analytics with data visualization</li>
-                      <li>Secure login system with encrypted user data</li>
-                    </ul>
-                    <a target="_blank" href="https://harshu9055.github.io/suraj-engineering-works/" class="view-project">🔗 View Project</a>
-                </div>
-            </div>
-        </div>
 
         <div class="card-container">
             <div class="card">
@@ -156,6 +140,23 @@
                       <li>Secure login system with encrypted user data</li>
                     </ul>
                     <a href="#" class="view-project">🔗 View Project</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-side card-front">
+                    <img src="images/sew.png" alt="">
+                </div>
+                <div class="card-side card-back project-card">
+                    <h2>Suraj Engineering Works</h2>
+                    <ul>
+                      <li>Advanced analytics with data visualization</li>
+                      <li>Secure login system with encrypted user data</li>
+                    </ul>
+                    <a target="_blank" href="https://harshu9055.github.io/suraj-engineering-works/" class="view-project">🔗 View Project</a>
                 </div>
             </div>
         </div>
@@ -197,27 +198,34 @@
     </section>
 
 
-
+    <h2 style="text-align: center;margin-bottom: 20px;padding-top: 100px; text-decoration: underline;
+    text-decoration-color: #6d3cd0;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px; 
+    font-size: 2.5rem;"
+    >Contact Me</h2>
     <section id="contact" class="contact">
         <div class="contact-card">
-            <h2>Contact Us</h2>
-            <form action="YOUR_FORMSFREE_ENDPOINT" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-    
-                <label for="email">Email</label>
+            
+            
+            <form action="https://formspree.io/f/meoovegn" method="POST">
+                <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
     
-                <label for="message">Message</label>
+                <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-    
-                <button type="submit">Send Message</button>
+                <div class="but-div"><button type="submit">Send Message</button></div>
+                
+                
             </form>
         </div>
 
     </section>
 
+    <section class="footer">
 
+    </section>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
     <script>
