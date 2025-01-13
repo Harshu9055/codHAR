@@ -341,7 +341,6 @@ main{
     object-fit: cover;
 }
 .card-back {
-    background: #ff6347;
     color: #fff;
     transform: rotateY(180deg);
 }
@@ -559,11 +558,11 @@ nav svg{
     box-sizing: border-box;
     height: auto;
     width: 100%;
-    padding: 20px 30px;
+    padding: 0px 30px;
     justify-content: flex-start;
   }
   .open-sidebar-button, .close-sidebar-button{
-    padding: 20px;
+    padding-right: 20px;
     display: block;
   }
   #sidebar-active:checked ~ .links-container{
@@ -576,6 +575,12 @@ nav svg{
     top: 0;
     left: 0;
     z-index: 9;
+  }
+  logo{
+    font-size:2rem;
+  }
+  logo span{
+    font-size:2rem;
   }
   #sec1{
     display: none;
@@ -704,7 +709,6 @@ nav svg{
         justify-content: center;
         gap:25px 5px;
     }
-    
     .skills-flexbox{
         display:flex;
         flex-wrap: wrap;
@@ -738,20 +742,49 @@ nav svg{
         transition: transform 0.8s;
        
     }
-
-    
-    
-    .card-container {
-        perspective: 1000px;
-      }
-    .card {
-        width: 350px;
-        height: 170px;
-        position: relative;
-        transform-style: preserve-3d;
-        transform: rotateY(0deg);
-        transition: transform 0.8s;
-       
+    .about-right p{
+  
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .about-right {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
+    .card-back {
+        color: #fff;
+        transform: rotateY(180deg);
+    }
+    
+    .project-card {
+        background: #000000;
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        font-size: 0.7rem;
+    }
+
+    .project-card ul {
+        padding: 0;
+        list-style: none;
+        margin: 5px 0;
+    }
+    .project-card ul li {
+        margin: 2px 0;
+        text-align: center;
+    }
+    .view-project {
+        display: inline-block;
+        margin-top: 5px;
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #8A4FFF;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
 }
