@@ -705,6 +705,40 @@ nav svg{
         gap:25px 5px;
     }
     
+    .skills-flexbox{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        gap:10px;
+    }
+    .skill p{
+        font-weight: lighter;
+        font-size: 1.2rem;
+        margin: 0;
+        font-weight: 500;
+        color: rgb(32, 32, 32);
+    }
+    
+    .skill{
+        width:160px;
+        height: 80px;
+       
+    }
+    
+    
+    .card-container {
+        perspective: 1000px;
+      }
+    .card {
+        width: 350px;
+        height: 170px;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transition: transform 0.8s;
+       
+    }
+
     
     
     .card-container {
