@@ -563,7 +563,7 @@ nav svg{
   }
   .open-sidebar-button, .close-sidebar-button{
     padding-right: 20px;
-    padding-top:7px;
+    padding-top:4.5px;
     display: block;
   }
   #sidebar-active:checked ~ .links-container{
