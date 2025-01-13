@@ -115,7 +115,7 @@ main{
    
 }
 
-#sec2 button:hover{
+.btn1:hover{
     background-color: #581fc9;
    
     
@@ -144,7 +144,7 @@ main{
 #about{
     text-align: center;
     margin-bottom: 20px;
-    padding-top: 100px;
+    padding-top: 30px;
    
 }
 
@@ -369,6 +369,7 @@ main{
 }
 .project-card ul li {
     margin: 5px 0;
+    text-align: center;
 }
 .view-project {
     display: inline-block;
@@ -661,7 +662,62 @@ nav svg{
     .socials{
         margin-top: 20px;
     }
-    .projects-section{
-        display: none;
+    
+
+.projects-section {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:25px 15px;
+}
+
+
+
+.card-container {
+    perspective: 1000px;
+  }
+.card {
+    width: 400px;
+    height: 190px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+   
+}
+.skill p{
+    font-weight: lighter;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+}
+}
+
+
+@media(max-width: 400px){
+    .projects-section {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:25px 5px;
     }
+    
+    
+    
+    .card-container {
+        perspective: 1000px;
+      }
+    .card {
+        width: 350px;
+        height: 170px;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transition: transform 0.8s;
+       
+    }
+
 }
